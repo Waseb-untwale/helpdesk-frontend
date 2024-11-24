@@ -1,0 +1,107 @@
+/* General registration styles */
+.register {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for container */
+.register:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.register h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 48px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Form container */
+.register form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label style */
+.register label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input style */
+.register input {
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focus effect on inputs */
+.register input:focus {
+  border-color: #e23c3c;
+  background-color: #e6f7ff;
+  outline: none;
+}
+
+/* Button style */
+.register button {
+  padding: 12px;
+  background-color: #ec4040;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.register button:hover {
+  background-color: #e52f2f;
+  transform: scale(1.05);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .register {
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .register h2 {
+    font-size: 24px;
+  }
+
+  .register input,
+  .register button {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+/* Success message styles */
+.register .success-message {
+  color: #28a745;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Error message styles */
+.register .error-message {
+  color: #dc3545;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}

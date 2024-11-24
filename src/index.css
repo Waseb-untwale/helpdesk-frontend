@@ -1,13 +1,159 @@
-body {
+/* Global Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #ffe5e5; /* Light peachy red background */
+  color: #333; /* Dark text color for good contrast */
+  font-size: 16px; /* Base font size for the app */
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  color: #d32f2f; /* Red headers that match the background tone */
+  font-family: 'Arial', sans-serif; /* Maintain consistency with the body font */
+}
+
+/* Adjusting font size for larger headings */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+/* Links */
+a {
+  color: #d32f2f; /* Red links to match the theme */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: #d32f2f; /* Red background for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #c2185b; /* Darker shade of red for hover effect */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffebee; /* Light red-pink background for the table */
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8bbd0; /* Light pink/red background for table headers */
+  color: #d32f2f; /* Red text for header */
+}
+
+td {
+  background-color: #fff0f1; /* Very light red for table cells */
+}
+
+tr:nth-child(even) {
+  background-color: #fce4ec; /* Alternating row background color */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Light hover effect for rows */
+}
+
+/* Form Styles */
+form {
+  background-color: #fff0f1; /* Very light pink/red for the form background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  width: 100%;
+  background-color: #d32f2f; /* Red background for form button */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #c2185b; /* Darker red on button hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 0.85em;
+  }
 }

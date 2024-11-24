@@ -1,0 +1,113 @@
+/* Customer Tickets Container */
+.customer-tickets-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.customer-tickets-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.customer-tickets-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.customer-tickets-container th,
+.customer-tickets-container td {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.customer-tickets-container th {
+  background-color: #ec5656;
+  color: white;
+  font-weight: bold;
+}
+
+.customer-tickets-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.customer-tickets-container td a {
+  color: #f14f4f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.customer-tickets-container td a:hover {
+  color: #b31e00;
+}
+
+/* Button Style in Table */
+.customer-tickets-container td a {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #e7f3fe;
+  border: 1px solid #6d0303;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.customer-tickets-container td a:hover {
+  background-color: #fb2222;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customer-tickets-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .customer-tickets-container h2 {
+    font-size: 24px;
+  }
+
+  .customer-tickets-container table {
+    font-size: 14px;
+  }
+
+  .customer-tickets-container th,
+  .customer-tickets-container td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-tickets-container {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .customer-tickets-container h2 {
+    font-size: 20px;
+  }
+
+  .customer-tickets-container table {
+    font-size: 12px;
+  }
+
+  .customer-tickets-container th,
+  .customer-tickets-container td {
+    padding: 8px;
+  }
+
+  .customer-tickets-container td a {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}

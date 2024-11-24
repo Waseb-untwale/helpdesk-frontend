@@ -1,0 +1,152 @@
+/* Ticket Details Page */
+.ticket-details {
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-details h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ticket-details h3 {
+  font-size: 1.4em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.ticket-details p {
+  margin: 12px 0;
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.notes-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.notes-list li {
+  margin: 15px 0;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-left: 5px solid #d70b0b;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.notes-list li:hover {
+  background-color: #e7f3fe;
+  transform: translateX(5px);
+}
+
+.notes-list strong {
+  font-weight: 600;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: #d00404e7;
+  outline: none;
+}
+
+button {
+  background-color: #d81111;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #b30000f6;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ticket-details {
+    padding: 20px;
+  }
+
+  .ticket-details h2 {
+    font-size: 1.8em;
+  }
+
+  .ticket-details h3 {
+    font-size: 1.3em;
+  }
+
+  .notes-list li {
+    padding: 12px;
+  }
+
+  textarea {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  button {
+    background-color: #ff0000d4;
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ticket-details {
+    padding: 15px;
+  }
+
+  .ticket-details h2 {
+    font-size: 1.5em;
+  }
+
+  .ticket-details h3 {
+    font-size: 1.2em;
+  }
+
+  .notes-list li {
+    padding: 10px;
+  }
+
+  textarea {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}

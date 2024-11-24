@@ -1,0 +1,30 @@
+.add-ticket-form {
+  margin-left: 220px;
+}
+
+.add-ticket-form h1 {
+  font-size: 24px;
+}
+
+form label {
+  display: block;
+  margin: 15px 0;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #c92222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #b30000e9;
+}

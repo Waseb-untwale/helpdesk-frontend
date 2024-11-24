@@ -1,0 +1,95 @@
+/* Tickets Page Container */
+.tickets {
+  margin-left: 220px; /* Adjust based on LeftMenu */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Tickets Header */
+.tickets h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table Header Styling */
+th, td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Table Header Background */
+th {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Links inside Table */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tickets {
+    padding: 15px;
+    margin-left: 0;
+  }
+
+  .tickets h1 {
+    font-size: 1.8em;
+  }
+
+  th, td {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .tickets {
+    padding: 10px;
+  }
+
+  .tickets h1 {
+    font-size: 1.6em;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}

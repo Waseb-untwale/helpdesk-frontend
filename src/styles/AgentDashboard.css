@@ -1,0 +1,84 @@
+/* Agent Dashboard Page */
+.agent-dashboard {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.agent-dashboard h1 {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.agent-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.agent-dashboard th, .agent-dashboard td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1em;
+  color: #333;
+}
+
+.agent-dashboard th {
+  background-color: #e85555fe;
+  color: white;
+  font-size: 1.1em;
+}
+
+.agent-dashboard tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.agent-dashboard td a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.agent-dashboard td a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .agent-dashboard {
+    padding: 20px;
+  }
+
+  .agent-dashboard h1 {
+    font-size: 1.8em;
+  }
+
+  .agent-dashboard th, .agent-dashboard td {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .agent-dashboard {
+    padding: 15px;
+  }
+
+  .agent-dashboard h1 {
+    font-size: 1.6em;
+  }
+
+  .agent-dashboard th, .agent-dashboard td {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+}
