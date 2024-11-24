@@ -7,7 +7,7 @@ const AgentDashboard = () => {
   useEffect(() => {
     const fetchTickets = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/tickets");
+        const response = await axios.get("https://helpdesk-backend-murex.vercel.app/api/tickets");
         setTickets(response.data);
       } catch (error) {
         console.error("Error fetching tickets:", error);
@@ -20,7 +20,7 @@ const AgentDashboard = () => {
   const handleStatusChange = async (ticketId, newStatus) => {
     try {
       // Call the backend API to update the ticket status
-      const response = await axios.put(`http://localhost:5000/api/tickets/${ticketId}`, { status: newStatus });
+      const response = await axios.put(`https://helpdesk-backend-murex.vercel.app/api/tickets/${ticketId}`, { status: newStatus });
       setTickets((prevTickets) =>
         prevTickets.map((ticket) =>
           ticket._id === ticketId ? { ...ticket, status: newStatus } : ticket

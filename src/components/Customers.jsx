@@ -17,7 +17,7 @@ function Customers() {
         return;
       }
 
-      const response = await axios.get("http://localhost:5000/api/auth/customers", {
+      const response = await axios.get("https://helpdesk-backend-murex.vercel.app/api/auth/customers", {
         headers: {
           Authorization: `Bearer ${token}`, // Add token in the Authorization header
         },

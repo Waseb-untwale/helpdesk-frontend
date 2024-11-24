@@ -12,7 +12,7 @@ function Login({ onLogin }) {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", {
+      const response = await axios.post("https://helpdesk-backend-murex.vercel.app/api/auth/login", {
         email,
         password,
       });

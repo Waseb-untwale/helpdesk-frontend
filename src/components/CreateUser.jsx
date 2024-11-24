@@ -22,7 +22,7 @@ const CreateUser = () => {
             return;
           }
 
-          const response = await axios.get(`http://localhost:5000/api/auth/users/${id}`, {
+          const response = await axios.get(`https://helpdesk-backend-murex.vercel.app/auth/users/${id}`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           const user = response.data;
@@ -48,7 +48,7 @@ const CreateUser = () => {
 
       if (id) {
         // Edit existing user
-        await axios.put(`http://localhost:5000/api/auth/users/${id}`, updatedUser, {
+        await axios.put(`https://helpdesk-backend-murex.vercel.app/api/auth/users/${id}`, updatedUser, {
           headers: { Authorization: `Bearer ${token}` },
         });
         alert("User updated successfully");

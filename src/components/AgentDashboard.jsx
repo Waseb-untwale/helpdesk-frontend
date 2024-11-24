@@ -12,7 +12,7 @@ function AgentDashboard() {
     const fetchTickets = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/api/tickets", {
+        const response = await axios.get("https://helpdesk-backend-murex.vercel.app/api/tickets", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTickets(response.data); // Assuming the API returns an array of tickets

@@ -12,7 +12,7 @@ const UserManagement = () => {
   const fetchUsers = async () => {
     try {
       const token = localStorage.getItem("token"); // Get JWT token
-      const response = await axios.get("http://localhost:5000/api/auth/customers", {
+      const response = await axios.get("https://helpdesk-backend-murex.vercel.app/api/auth/customers", {
         headers: { Authorization: `Bearer ${token}` }, // Add token in headers
       });
       setUsers(response.data); // Set fetched users
@@ -28,7 +28,7 @@ const UserManagement = () => {
   const createUser = async (userData) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.post("http://localhost:5000/api/auth/register", userData, {
+      await axios.post("https://helpdesk-backend-murex.vercel.app/api/auth/register", userData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchUsers(); // Refresh user list

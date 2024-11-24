@@ -22,11 +22,11 @@ function Dashboard() {
         }
 
         // Fetch total tickets
-        const ticketsResponse = await axios.get("http://localhost:5000/api/tickets");
+        const ticketsResponse = await axios.get("https://helpdesk-backend-murex.vercel.app/api/tickets");
         setTotalTickets(ticketsResponse.data.length); // Assuming the response data is an array of tickets
 
         // Fetch total customers
-        const customersResponse = await axios.get("http://localhost:5000/api/auth/customers", {
+        const customersResponse = await axios.get("https://helpdesk-backend-murex.vercel.app/api/auth/customers", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTotalCustomers(customersResponse.data.length); // Assuming the response data is an array of customers

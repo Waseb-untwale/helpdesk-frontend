@@ -15,13 +15,13 @@ function TicketDetails({ role }) {
         const token = localStorage.getItem("token");
         
         // Fetch ticket details
-        const ticketResponse = await axios.get(`http://localhost:5000/api/tickets/${id}`, {
+        const ticketResponse = await axios.get(`https://helpdesk-backend-murex.vercel.app/api/tickets/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTicketData(ticketResponse.data);
 
         // Fetch notes for the ticket
-        const notesResponse = await axios.get(`http://localhost:5000/api/tickets/${id}/notes`, {
+        const notesResponse = await axios.get(`https://helpdesk-backend-murex.vercel.app/api/tickets/${id}/notes`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTicketNotes(notesResponse.data.notes); // Assuming the response has notes as an array
@@ -44,7 +44,7 @@ function TicketDetails({ role }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        `http://localhost:5000/api/tickets/${id}/notes`,
+        `https://helpdesk-backend-murex.vercel.app/api/tickets/${id}/notes`,
         { note: notes },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -35,11 +35,11 @@ function CreateTicket() {
     try {
       if (ticketId) {
         // If ticketId exists, update the ticket (PUT request)
-        const response = await axios.put(`http://localhost:5000/api/tickets/${ticketId}`, ticketData);
+        const response = await axios.put(`https://helpdesk-backend-murex.vercel.app/api/tickets/${ticketId}`, ticketData);
         alert("Ticket Updated Successfully!");
       } else {
         // Otherwise, create a new ticket (POST request)
-        const response = await axios.post("http://localhost:5000/api/tickets", ticketData);
+        const response = await axios.post("https://helpdesk-backend-murex.vercel.app/api/tickets", ticketData);
         alert("Ticket Created Successfully!");
       }
 
