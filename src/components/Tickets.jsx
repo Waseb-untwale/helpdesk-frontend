@@ -54,8 +54,8 @@ const AgentDashboard = () => {
               <td>{ticket.name}</td>
               <td>{ticket.title}</td>
               <td>{ticket.status}</td>
-           
-              <td>{new Date(ticket.lastUpdated).toLocaleDateString()}</td>
+              
+              <td>{ticket.updatedAt}</td>
               <td>
                 <button onClick={() => handleStatusChange(ticket._id, "Active")}>Set Active</button>
                 <button onClick={() => handleStatusChange(ticket._id, "Pending")}>Set Pending</button>
