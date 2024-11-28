@@ -61,6 +61,15 @@ function Login({ onLogin }) {
       <p>
         Don't have an account? <a href="/register">Register here</a>
       </p>
+      
+      <p>
+        Try Customer-agent-login:"amit@gmail.com"
+        password:123456
+      </p>
+      <p>
+        Try Admin-Login:"sahil@gmail.com"<br></br>
+        password:123456
+      </p>
     </div>
   );
 }
